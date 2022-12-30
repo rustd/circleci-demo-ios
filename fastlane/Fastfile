@@ -1,5 +1,4 @@
 desc "Runs all the tests"
   lane :tests do
     scan
-    snapshot
 end
