@@ -3,6 +3,7 @@ jobs:
   build-and-test:
     macos:
       xcode: "14.0.1"
+    machine: "large"
     steps:
       - checkout
       - run:
