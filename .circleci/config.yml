@@ -3,14 +3,8 @@ jobs:
   build-and-test:
     macos:
       xcode: "14.0.1"
-    working_directory: /Users/distiller/project
-    environment:
-      FL_OUTPUT_DIR: output
-      FASTLANE_LANE: test
-    shell: /bin/bash --login -o pipefail
     steps:
       - checkout
-      - run: bundle install
       - run:
           name: Fastlane Install
           command: brew install fastlane
